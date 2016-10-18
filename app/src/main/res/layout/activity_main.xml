@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAddress" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStatus"
+        tools:text="Not Found!" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDegree"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <ScrollView
+        android:id="@+id/uart_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5px"
+        android:layout_marginTop="5px"
+        android:layout_weight="0.70"
+        android:background="#ffffffff" >
+
+        <TextView
+            android:id="@+id/console"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text=""
+            android:textColor="#ff000000"
+            android:textSize="16.0sp" >
+        </TextView>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonScan"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:text="Start"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:text="Clear"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+</LinearLayout>
